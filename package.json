@@ -1,7 +1,7 @@
 {
   "name": "qr-code-scanner",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
@@ -13,10 +13,21 @@
     "expo-splash-screen": "~0.18.2",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.7"
+    "react-native": "0.71.7",
+    "react-native-camera": "^4.2.1",
+    "react-native-permissions": "^3.8.0",
+    "react-native-qrcode-scanner": "^1.5.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
+  },
+  "resolutions": {
+    "react-native-permissions": "^3.8.0"
+  },
+  "overrides": {
+    "react-native-qrcode-scanner": {
+      "react-native-permissions": "^3.8.0"
+    }
   },
   "private": true
 }
